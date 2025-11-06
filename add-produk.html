@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BURSA SUNPRIDE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <!-- include FilePond styles -->
+    <link
+      href="https://unpkg.com/filepond/dist/filepond.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- include FilePond image preview styles -->
+    <link
+      href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style/main.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./asset/logo.png" alt="" />
+          <span>BURSA</span></a
+        >
+        <div class="d-flex align-items-center gap-3">
+          <!-- Notifikasi di samping toggle -->
+          <div class="dropdown d-lg-none">
+            <a
+              href="#"
+              id="notifDropdown"
+              data-bs-toggle="dropdown"
+              class="notification-icon"
+              aria-expanded="false"
+            >
+              <i class="fa-solid fa-bell fa-lg"></i>
+              <span class="notif-badge">52</span>
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="notifDropdown"
+              id="notifList"
+            >
+              <li><h6 class="dropdown-header">Notifikasi</h6></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li class="dropdown-item">Test notifikasi 1</li>
+            </ul>
+          </div>
+
+          <!-- Tombol toggle navbar -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-auto">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="suplierhome.html"
+              >Home</a
+            >
+            <a class="nav-link" href="listproduksup.html">All My Product</a>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <!-- Notifikasi di samping toggle -->
+            <div class="dropdown d-none d-lg-block">
+              <a
+                href="#"
+                id="notifDropdown"
+                data-bs-toggle="dropdown"
+                class="notification-icon"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-bell fa-lg"></i>
+                <span class="notif-badge">52</span>
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="notifDropdown"
+                id="notifList"
+              >
+                <li><h6 class="dropdown-header">Notifikasi</h6></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li class="dropdown-item">Test notifikasi 1</li>
+              </ul>
+            </div>
+
+            <!-- Tombol toggle navbar -->
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="userDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-user"></i> Hi, Rizki Damar
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="userDropdown"
+                >
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item text-danger" href="#">Logout</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <main>
+      <section class="order" style="margin-top: 6%">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-12">
+              <div class="card">
+                <h5 class="ms-3 mt-3 fw-bold">Tambah Produk</h5>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <form>
+                        <div class="mb-3">
+                          <label for="nama_toko" class="form-label"
+                            >Nama Produk
+                            <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="nama_toko"
+                          />
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="mb-3">
+                              <label for="harga" class="form-label"
+                                >Jenis Produk
+                                <span class="text-danger">*</span></label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="harga"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="mb-3">
+                              <label for="harga" class="form-label"
+                                >Kategori Produk
+                                <span class="text-danger">*</span></label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="harga"
+                                aria-describedby="email"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="mb-3">
+                              <label for="harga" class="form-label"
+                                >Grade <span class="text-danger">*</span></label
+                              >
+                              <select
+                                name=""
+                                id="select"
+                                class="select1 form-control form-select-lg"
+                                multiple="multiple"
+                              >
+                                <option value="spa">SPA</option>
+                                <option value="SPP">SPP</option>
+                                <option value="SP">SP</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="mb-3">
+                              <label for="harga" class="form-label"
+                                >Size/Ukuran
+                                <span class="text-danger">*</span></label
+                              >
+                              <select
+                                name=""
+                                id="select2"
+                                class="select2 form-control form-select-lg"
+                                multiple="multiple"
+                              >
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="mb-3">
+                              <label for="harga" class="form-label"
+                                >Kecamatan
+                                <span class="text-danger">*</span></label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="harga"
+                                aria-describedby="email"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="mb-3">
+                              <label for="harga" class="form-label"
+                                >Kab/kota
+                                <span class="text-danger">*</span></label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="harga"
+                                aria-describedby="email"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="mb-3">
+                              <label for="harga" class="form-label"
+                                >Provinsi</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="harga"
+                                aria-describedby="email"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="mb-3">
+                              <label for="harga" class="form-label"
+                                >No. Handphone
+                                <span class="text-danger">*</span></label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="number"
+                                accept="number"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="mb-3">
+                              <label for="harga" class="form-label"
+                                >Total Stok / Estimasi Panen
+                                <span class="text-danger">*</span>
+                              </label>
+                              <input
+                                type="number"
+                                class="form-control"
+                                id="harga"
+                                aria-describedby="email"
+                                inputmode="numeric"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="mb-3">
+                              <label for="harga" class="form-label"
+                                >Tanggal Ready Stock
+                                <span class="text-danger">*</span></label
+                              >
+                              <input
+                                type="date"
+                                class="form-control"
+                                id="harga"
+                                aria-describedby="email"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="mb-3">
+                            <label for="harga" class="form-label"
+                              >Harga <span class="text-danger">*</span></label
+                            >
+                            <input
+                              type="numeric"
+                              class="form-control"
+                              id="harga"
+                              inputmode="numeric"
+                              pattern="[0-9]*"
+                              accept="number"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="mb-3">
+                            <label for="harga" class="form-label"
+                              >Satuan <span class="text-danger">*</span></label
+                            >
+                            <select name="" id="" class="form-select">
+                              <option selected>Pcs</option>
+                              <option selected>Kg</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="harga" class="form-label"
+                          >Deskripsi Produk
+                          <span class="text-danger">*</span></label
+                        >
+                        <textarea
+                          name=""
+                          class="form-control"
+                          id=""
+                          cols="30"
+                          rows="10"
+                        ></textarea>
+                      </div>
+                      <div class="mb-3">
+                        <label for=""
+                          >Foto Produk (<small class="text-danger"
+                            >Max 2MB</small
+                          >) <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="file"
+                          class="my-pond"
+                          accept="image/*"
+                          name="filepond"
+                        />
+                      </div>
+                      <div class="d-flex justify-content-end gap-3">
+                        <a
+                          href="myorder.html"
+                          class="btn btn-danger float-end px-4"
+                        >
+                          Cancel
+                        </a>
+                        <a
+                          href="suplierhome.html"
+                          class="btn btn-success float-end px-4"
+                        >
+                          Simpan
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- include FilePond library -->
+    <script src="https://unpkg.com/filepond/dist/filepond.min.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.min.js"></script>
+
+    <!-- include FilePond plugins -->
+    <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js"></script>
+
+    <!-- include FilePond jQuery adapter -->
+    <script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
+
+    <script>
+      $(function () {
+        // First register any plugins
+        $.fn.filepond.registerPlugin(FilePondPluginImagePreview);
+
+        // Turn input element into a pond
+        $(".my-pond").filepond();
+
+        // Set allowMultiple property to true
+        $(".my-pond").filepond({
+          allowMultiple: true,
+          acceptedFileTypes: ["image/*"],
+          fileValidateTypeLabelExpectedTypes:
+            "File harus berupa gambar (jpg, png, gif, dll)",
+        });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".select2").select2();
+        $(".select1").select2();
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/view.js"></script>
+  </body>
+</html>

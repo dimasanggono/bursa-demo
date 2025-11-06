@@ -1,0 +1,43 @@
+.filter-all {
+  justify-content: center;
+  margin-top: 3%;
+
+  .search-by {
+    font-size: 24px;
+  }
+
+  .form-select {
+    border-radius: 15px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .filter-all {
+    width: 100%;
+    margin-bottom: 2%;
+    justify-content: start;
+    padding: 15px;
+
+    .search-by {
+      font-weight: 600;
+      color: #006203;
+      font-size: 13px;
+      margin-top: 3%;
+      width: 30%;
+    }
+    .form-select {
+      width: 100%;
+      font-size: 12px;
+    }
+  }
+
+  .card-produk:hover {
+    border-radius: 15px;
+    margin: 5px auto;
+    max-height: 550px;
+    border: 1px solid #edecec;
+    transform: scale(1.02);
+    transition: 0.5s;
+  }
+}

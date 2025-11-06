@@ -1,0 +1,107 @@
+.login {
+  margin-top: 10%;
+
+  .card-login {
+    border-radius: 15px;
+    padding: 2rem 3.8rem;
+    box-shadow: 0px 0px 10px 1px #0000003b;
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+  }
+
+  h3 {
+    color: #006203;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  .form-login {
+    margin: 5px auto;
+    border: 1px;
+    max-width: 400px;
+    width: 100%;
+
+    .input {
+      margin: 30px auto;
+    }
+
+    .forget {
+      color: #000;
+      text-decoration: none;
+      float: inline-end;
+      margin-bottom: 15px;
+
+      &:hover {
+        color: #006203;
+      }
+    }
+
+    .btn-login {
+      background-color: #006203;
+      color: #fff;
+      width: 80%;
+      display: block;
+      margin: 20px auto;
+      border-radius: 15px;
+
+      &:hover {
+        background-color: #fff;
+        color: #006203;
+        border: 1px solid #006203;
+        box-shadow: 0px 0px 10px 1px #0000003b;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .login {
+    margin-top: 35%;
+
+    .card-login {
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0px 0px 10px 1px #0000003b;
+      width: 100%;
+      margin: auto;
+    }
+
+    img {
+      width: 75%;
+      margin: auto;
+      justify-content: center;
+      display: flex;
+      padding: 10px;
+    }
+
+    h3 {
+      margin-top: 2%;
+      color: #006203;
+      font-weight: 600;
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .form-login {
+      width: 100%;
+      margin: auto;
+      border-radius: 25px;
+
+      .input {
+        margin: 30px auto;
+      }
+
+      .btn-login {
+        background-color: #006203;
+        color: #fff;
+        width: 100%;
+        margin: 25px auto;
+        display: block;
+        border-radius: 15px;
+      }
+    }
+  }
+}

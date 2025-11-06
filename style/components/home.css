@@ -1,0 +1,108 @@
+body {
+  background-color: #f2f2f2;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  background-color: #ffffff;
+  padding: 10px;
+}
+.navbar .navbar-brand {
+  font-size: 24px;
+  font-weight: 900;
+  color: #006203;
+}
+.navbar .navbar-brand img {
+  width: 100px;
+}
+.navbar .nav-link {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  color: #006203;
+  margin: 15px;
+}
+.navbar .btn-login {
+  background-color: #0c710f;
+  color: #fff;
+  border-radius: 15px;
+}
+.navbar .btn-login:hover {
+  background-color: #048408;
+}
+.navbar .btn-signup {
+  background-color: #0c710f;
+  color: #fff;
+  border-radius: 15px;
+}
+.navbar .btn-signup:hover {
+  background-color: #048408;
+}
+
+section {
+  margin-top: 5%;
+}
+
+.head-content .text-banner {
+  margin-top: 5%;
+}
+.head-content .text-banner h1 {
+  font-size: 50px;
+  font-weight: 800;
+  color: #006203;
+}
+.head-content .text-banner p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #000;
+  margin-top: 5px;
+}
+.head-content img {
+  width: 100%;
+}
+
+.filter .form-select {
+  border-radius: 15px;
+  width: 200px;
+}
+
+.produk h2 {
+  margin-bottom: 5%;
+  font-weight: 600;
+  color: #006203;
+}
+.produk .card-produk {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.231372549);
+  border-radius: 15px;
+  margin: 5px 0px 5px 0px;
+  max-height: 550px;
+}
+.produk .card-produk img {
+  max-width: 250px;
+  margin: auto;
+}
+.produk .card-produk .card-title {
+  margin: 5px;
+}
+.produk .card-produk .card-text {
+  margin: 5px;
+  font-size: 15px;
+}
+.produk .card-produk .card-text table th {
+  font-weight: 600;
+}
+.produk .card-produk .card-text table td {
+  font-weight: 300;
+}
+.produk .card-produk .card-post {
+  font-size: 15px;
+  margin-top: 5px;
+  color: rgba(114, 112, 112, 0.8196078431);
+}
+.produk .pagination {
+  margin-top: 5%;
+  text-decoration: none;
+}
+.produk .pagination .page-item .page-link {
+  color: #000;
+}/*# sourceMappingURL=home.css.map */

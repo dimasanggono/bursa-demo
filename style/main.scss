@@ -1,0 +1,16 @@
+@use "components/_home";
+@use "components/_details";
+@use "components/_myporder";
+@use "components/_suplier";
+@use "components/_lsrhome";
+@use "components/_detailproduk";
+@use "components/addproduk";
+@use "components/login";
+@use "components/_allprodouct";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}

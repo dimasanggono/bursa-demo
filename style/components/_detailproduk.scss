@@ -1,0 +1,42 @@
+.detail-produk {
+  .header-title {
+    color: #006203;
+  }
+}
+
+.btn-kirm {
+  background-color: #c4c0c0;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 15px;
+
+  font-weight: 600;
+  margin-bottom: 1%;
+
+  &:hover {
+    background-color: #c4c0c0;
+    color: #000;
+    font-weight: 600;
+  }
+}
+
+.img-card {
+  border: 1px solid #c4c0c0;
+  border-radius: 10px;
+
+  img {
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+    padding: 25px;
+  }
+}
+
+.table-kirim table {
+  border-radius: 15px;
+  padding: 10px;
+  margin: 5px auto;
+  width: 100%;
+  margin-bottom: 5%;
+  text-align: center;
+}

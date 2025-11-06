@@ -1,0 +1,256 @@
+.header-content {
+  margin-top: 7%;
+
+  h3 {
+    font-weight: 600;
+    color: #006203;
+  }
+}
+
+.dashboard {
+  margin-top: -2%;
+  .card-dashboard {
+    border-radius: 20px;
+    width: 100%;
+    height: 140px;
+    margin: 20px auto;
+
+    .card-icon {
+      img {
+        width: 90px;
+      }
+    }
+    .card-text {
+      margin: 5px 0px 5px 0px;
+      h5 {
+        font-weight: 600;
+        color: #000;
+        font-size: 25px;
+      }
+      h3 {
+        font-weight: 600;
+        color: #000;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.btn-add {
+  background-color: #0c710f;
+  color: #fff;
+  border-radius: 15px;
+  margin-bottom: 2%;
+  justify-items: end;
+  justify-content: flex-end;
+  box-shadow: 0px 0px 10px 1px #0000003b;
+
+  &:hover {
+    background-color: #fff;
+    color: #0c710f;
+  }
+}
+
+.produk-list {
+  h5 {
+    margin-bottom: 2%;
+    font-weight: 600;
+    color: #006203;
+    font-size: 25px;
+  }
+
+  .card-produk {
+    margin: 5px 0px 5px 0px;
+
+    img {
+      width: 250px;
+      height: 200px;
+      margin: 5px auto;
+      padding: 10px;
+    }
+
+    .badge {
+      width: 30%;
+      text-align: start;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main {
+    margin-top: 20%;
+  }
+
+  .header-content {
+    h3 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .dashboard {
+    margin-top: -5%;
+    .card-dashboard {
+      width: 100%;
+      height: 86px;
+      .card-icon {
+        img {
+          width: 40px;
+        }
+      }
+      .card-text {
+        margin: 15px 0px 5px 0px;
+        width: 100%;
+        h5 {
+          font-size: 12px;
+        }
+        h3 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .btn-add {
+    background-color: #0c710f;
+    color: #fff;
+    border-radius: 15px;
+    margin-bottom: 2%;
+    justify-items: end;
+    justify-content: flex-end;
+    font-size: 12px;
+    box-shadow: 0px 0px 10px 1px #0000003b;
+  }
+
+  .produk-list {
+    margin: auto;
+
+    .card-produk {
+      margin: 5px 0px 5px 0px;
+      width: 100%;
+      justify-content: center;
+
+      &:hover {
+        border: #006203 solid 1px;
+        box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.231372549);
+      }
+      .card-title {
+        font-size: 18px;
+        color: #006203;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 5px;
+      }
+
+      img {
+        width: 140px;
+        height: 100px;
+        margin: 5px auto;
+        padding: 10px;
+      }
+
+      .badge {
+        width: 50%;
+        text-align: start;
+        font-size: 10px;
+      }
+
+      th {
+        font-size: 10px;
+      }
+      td {
+        font-size: 10px;
+      }
+
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 350px) {
+//   .header-content {
+//     h3 {
+//       font-size: 20px;
+//     }
+//     p {
+//       font-size: 12px;
+//     }
+//   }
+
+//   .dashboard {
+//     margin-top: -5%;
+//     .card-dashboard {
+//       width: 100%;
+//       height: 86px;
+//       .card-icon {
+//         img {
+//           width: 40px;
+//         }
+//       }
+//       .card-text {
+//         margin: 5px 0px 5px 0px;
+//         h5 {
+//           font-size: 10px;
+//         }
+//         h3 {
+//           font-size: 12px;
+//         }
+//       }
+//     }
+//   }
+
+//   .produk-list {
+//     margin: auto;
+
+//     .card-list {
+//       .btn-add {
+//         background-color: #0c710f;
+//         color: #fff;
+//         border-radius: 15px;
+//         margin-bottom: 2%;
+//         justify-items: end;
+//         justify-content: flex-end;
+//         font-size: 10px;
+//       }
+
+//       .card-produk {
+//         margin: 5px 0px 5px 0px;
+//         width: 100%;
+//         justify-content: center;
+
+//         &:hover {
+//           border: #006203 solid 1px;
+//           box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.231372549);
+//         }
+//         .card-title {
+//           font-size: 18px;
+//           color: #006203;
+//           font-weight: 600;
+//           text-align: center;
+//           margin-bottom: 5px;
+//         }
+
+//         .badge {
+//           width: 50%;
+//           text-align: start;
+//           font-size: 10px;
+//         }
+
+//         th {
+//           font-size: 9px;
+//         }
+//         td {
+//           font-size: 9px;
+//         }
+
+//         p {
+//           font-size: 9px;
+//         }
+//       }
+//     }
+//   }
+// }
